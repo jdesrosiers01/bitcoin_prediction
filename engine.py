@@ -18,9 +18,9 @@ est = timezone('US/Eastern')
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "*******"
+account_sid = "ACaf018e1a417a452c0d0c8dd52a70427a"
 # Your Auth Token from twilio.com/console
-auth_token  = "*******"
+auth_token  = "e7225b005a8e4391a4853bf5e1562659"
 
 client = Client(account_sid, auth_token)
 
@@ -83,7 +83,7 @@ import MySQLdb
 #Enter the values for you database connection
 dsn_database = "bitcoin"         # e.g. "MySQLdbtest"
 dsn_hostname = "173.194.231.244"      # e.g.: "mydbinstance.xyz.us-east-1.rds.amazonaws.com"
-dsn_port = 3306                  # e.g. 3306 
+dsn_port = 3306                  # e.g. 3306
 dsn_uid = "demo"             # e.g. "user1"
 dsn_pwd = "qwerty@123"              # e.g. "Password123"
 
@@ -92,7 +92,7 @@ conn = MySQLdb.connect(host=dsn_hostname, port=dsn_port, user=dsn_uid, passwd=ds
 cursor=conn.cursor()
 
 
-import queue 
+import queue
 import time
 
 import queue
@@ -142,9 +142,3 @@ while True:
     cursor.execute(input_string)
     conn.commit()
     time.sleep(60)
-    
-    
-
-
-
-
